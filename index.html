@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>PizzaProject</title>
+</head>
+
+<body>
+    <!-- umumiy o'rab turuvchi div -->
+    <div class="big-wrapper">
+
+        <!-- sarlavha uchun -->
+        <h2 class="title">Pizza Ordering</h2>
+        
+        <!-- o'ng va chap divlarni o'rab turuvchi div -->
+        <div class="ordering-wrapper">
+
+            <!-- chap taraf -->
+            <div class="left-section">
+
+                <!-- pitsalar tganlash qismi -->
+                <label class="type" for="typePizza">
+                    <h2 class="ChooseType">Choose Pizza Type </h2><br>
+
+                    <!-- pitsa tanlanganda chiqadigan ro'yxat -->
+                    <select class="form-select" id="pizzaType">
+                        <option disabled selected value="pizza">
+                            <p class="chouse">choose (pizza-1)</p>
+                        </option>
+                        <option value="first-pizza">first-pizza</option>
+                        <option value="second-pizza">second-pizza</option>
+                        <option value="third-pizza">third-pizza</option>
+                    </select>
+                </label>
+
+                <!-- pitsa narxi -->
+                <div id="pizza-box" class="cost">
+                    <h1 class="Franklin">$ <span id="pizzaPrice">4.33</span></h1>
+                </div>
+                
+                <!-- pitsa rasmlari -->
+                <div class="pizzaBox">
+                    <img id="pizzaImg" class="img" src="./image/pizza-1 2.png" alt="pizza">
+                </div>
+            </div>
+
+            <!-- o'ng qismi -->
+            <div class="right-section">
+
+                <!-- pitsaning soni nechtaligini aniqlash uchun -->
+                <h2 class="TaypeCount">Type Pizza Count</h2>
+                <input class="input" placeholder="type (2)" type="number">
+
+                <!-- adres uchun -->
+                <div class="Adress">
+                    <img class="icon-logo" src="./icon/test.png" alt="location">
+                    <h2 class="adress">Type delivery Adress</h2>
+                </div>
+                <textarea class="adresName" placeholder="66H7+QPG, Tashkent, Toshkent Shahri"></textarea>
+
+                <!-- kalkulyator -->
+                <div class="total">
+                    <h2 class="cost"> Total: 8.66 $</h2>
+
+                    <!-- buyurtma berish uchun tugma -->
+                    <div class="btn">
+                        <button type="submit" class="orderBtn">
+                            order
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>
